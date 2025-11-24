@@ -1,3 +1,6 @@
+import os
+import threading
+from flask import Flask
 from telegram import Update
 from telegram.ext import (
     Application, 
@@ -11,12 +14,34 @@ from src.config import TELEGRAM_BOT_TOKEN
 from src.handlers import start, help_command, handle_photo, handle_text, handle_unsupported, settings_command, handle_style_callback
 from src.utils import logger
 
+# Cria um servidor Flask simples para o Render detectar
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return "ViuBot está online! 🤖", 200
+
+@app.route('/health')
+def health():
+    return {"status": "healthy", "bot": "running"}, 200
+
+
+def run_flask():
+    """Roda o servidor Flask em uma thread separada."""
+    port = int(os.environ.get('PORT', 10000))
+    app.run(host='0.0.0.0', port=port, debug=False, use_reloader=False)
+
 
 def main() -> None:
     """Inicia o bot."""
     if not TELEGRAM_BOT_TOKEN:
         logger.error("O token do bot do Telegram não está configurado. O bot não pode ser iniciado.")
         return
+
+    # Inicia o servidor Flask em uma thread separada (para o Render)
+    flask_thread = threading.Thread(target=run_flask, daemon=True)
+    flask_thread.start()
+    logger.info("Servidor HTTP iniciado para o Render")
 
     # Adiciona persistência para salvar configurações dos usuários
     persistence = PicklePersistence(filepath="bot_data.pkl")

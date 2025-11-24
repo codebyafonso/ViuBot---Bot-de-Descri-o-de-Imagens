@@ -216,6 +216,9 @@ R: Sim! Adicione o bot ao grupo e mencione ele com as fotos.
 **P: Meus dados estão seguros?**  
 R: As imagens são processadas pela API e não são armazenadas.
 
+**P: Erro "Conflict: terminated by other getUpdates request"?**  
+R: Você tem duas instâncias do bot rodando. Pare uma delas (local ou Render).
+
 ---
 
 ## 🤝 Contribuindo
@@ -289,3 +292,5 @@ O projeto já inclui o arquivo `render.yaml` configurado. Basta:
 - Use **Background Worker**, não Web Service
 - Bots do Telegram não precisam de porta HTTP
 - O plano gratuito do Render funciona perfeitamente
+- **Rode apenas UMA instância** - Se o bot estiver no Render, pare a versão local
+- O Telegram não permite múltiplas conexões simultâneas com o mesmo token
