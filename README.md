@@ -45,8 +45,8 @@ Você vai precisar de:
 
 1. **Baixe o projeto**
    ```bash
-   git clone https://github.com/seu-usuario/telegram-image-bot.git
-   cd telegram-image-bot
+   git clone https://github.com/codebyafonso/ViuBot---Bot-de-Descri-o-de-Imagens.git
+   cd ViuBot---Bot-de-Descri-o-de-Imagens
    ```
 
 2. **Instale as dependências**
@@ -219,8 +219,8 @@ Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalh
 
 Encontrou algum problema? Tem alguma dúvida?
 
-- 📧 Abra uma [issue](https://github.com/seu-usuario/telegram-image-bot/issues)
-- 💬 Entre em contato pelo Telegram
+- 📧 Abra uma [issue](https://github.com/codebyafonso/ViuBot---Bot-de-Descri-o-de-Imagens/issues)
+- 💬 Entre em contato pelo Telegram: [@codebyafonso](https://t.me/codebyafonso)
 
 ---
 
