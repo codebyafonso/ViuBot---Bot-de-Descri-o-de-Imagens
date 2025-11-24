@@ -15,6 +15,7 @@ O **ViuBot** é um bot do Telegram que analisa suas fotos e cria descrições de
 ### ✨ Para que serve?
 
 - 📸 **Descrever fotos** - Entenda melhor o conteúdo das suas imagens
+- 💬 **Conversar sobre imagens** - Faça perguntas e obtenha detalhes específicos
 - 🎨 **Analisar arte** - Obtenha descrições de pinturas e ilustrações
 - 🏞️ **Identificar lugares** - Descubra detalhes sobre paisagens e locais
 - 👥 **Descrever cenas** - Entenda o contexto de fotos com pessoas e eventos
@@ -27,6 +28,7 @@ O **ViuBot** é um bot do Telegram que analisa suas fotos e cria descrições de
 1. **Você envia uma foto** para o bot no Telegram
 2. **O bot analisa** a imagem usando inteligência artificial
 3. **Você recebe** uma descrição detalhada em português
+4. **💬 Converse sobre a imagem** - Faça perguntas e obtenha mais detalhes!
 
 É simples assim! Não precisa de comandos complicados ou configurações técnicas.
 
@@ -96,11 +98,31 @@ Use `/config` para escolher seu estilo preferido!
 3. **Envie uma foto** (não como arquivo/documento)
 4. **Aguarde alguns segundos** enquanto a IA analisa
 5. **Receba a descrição** em português!
+6. **💬 Faça perguntas** sobre a imagem enviada
+
+### 💬 Modo Conversação
+
+Após enviar uma foto, você pode conversar sobre ela:
+
+```
+Você: [envia foto de um cachorro]
+Bot: 🔍 Um cachorro marrom sentado no jardim...
+     💬 Você pode fazer perguntas sobre esta imagem!
+
+Você: Que raça é esse cachorro?
+Bot: Parece ser um Golden Retriever...
+
+Você: Ele parece feliz?
+Bot: Sim! Pela expressão e postura dele...
+```
+
+O bot mantém o contexto das últimas 10 mensagens!
 
 ### 💡 Dicas
 
 - ✅ Envie fotos claras e bem iluminadas
-- ✅ Uma foto por vez para melhores resultados
+- ✅ Faça perguntas específicas sobre a imagem
+- ✅ O bot lembra da última foto enviada
 - ✅ Funciona com qualquer tipo de imagem
 - ❌ Não envie como documento/arquivo
 - ❌ Não funciona com vídeos ou áudios
@@ -181,6 +203,12 @@ R: Sim! Fotos, ilustrações, capturas de tela, memes, etc.
 
 **P: As descrições são sempre em português?**  
 R: Sim, o bot foi configurado para responder sempre em português.
+
+**P: Posso fazer perguntas sobre a imagem?**  
+R: Sim! Após enviar uma foto, basta digitar sua pergunta.
+
+**P: O bot lembra das conversas anteriores?**  
+R: Sim! Ele mantém o contexto das últimas 10 mensagens sobre a imagem atual.
 
 **P: Posso usar em grupos?**  
 R: Sim! Adicione o bot ao grupo e mencione ele com as fotos.
