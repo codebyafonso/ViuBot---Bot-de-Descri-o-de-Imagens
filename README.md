@@ -231,3 +231,33 @@ Encontrou algum problema? Tem alguma dúvida?
 ⭐ Se você gostou, deixe uma estrela no projeto!
 
 </div>
+
+---
+
+## 🚀 Deploy no Render
+
+### Opção 1: Deploy automático
+
+1. Acesse [Render.com](https://render.com/) e faça login
+2. Clique em "New +" → "Background Worker"
+3. Conecte seu repositório do GitHub
+4. Configure as variáveis de ambiente:
+   - `TELEGRAM_BOT_TOKEN` - Seu token do bot
+   - `OPENROUTER_API_KEY` - Sua chave da API
+   - `OPENROUTER_MODEL` - `openai/gpt-4o-mini`
+5. Clique em "Create Background Worker"
+
+### Opção 2: Deploy via render.yaml
+
+O projeto já inclui o arquivo `render.yaml` configurado. Basta:
+
+1. Fazer fork/clone do repositório
+2. Conectar ao Render
+3. Adicionar as variáveis de ambiente no dashboard
+4. O Render detectará automaticamente a configuração
+
+### ⚠️ Importante
+
+- Use **Background Worker**, não Web Service
+- Bots do Telegram não precisam de porta HTTP
+- O plano gratuito do Render funciona perfeitamente
