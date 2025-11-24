@@ -1,6 +1,10 @@
 # Environment variables
 .env
 
+# Bot data
+bot_data.pkl
+bot_data.pkl.bak
+
 # Python
 __pycache__/
 *.py[cod]

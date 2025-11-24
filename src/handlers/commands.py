@@ -25,11 +25,15 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
     await update.message.reply_html(
         "📖 <b>Como usar o ViuBot:</b>\n\n"
         "1️⃣ Envie uma foto (não como arquivo)\n"
-        "2️⃣ Aguarde alguns segundos\n"
-        "3️⃣ Receba a descrição detalhada!\n\n"
+        "2️⃣ Aguarde a descrição\n"
+        "3️⃣ Faça perguntas sobre a imagem!\n\n"
+        "💬 <b>Modo Conversa:</b>\n"
+        "Após enviar uma foto, você pode:\n"
+        "• Fazer perguntas sobre ela\n"
+        "• Pedir mais detalhes\n"
+        "• Conversar naturalmente\n\n"
         "⚠️ <b>Importante:</b>\n"
         "• Envie apenas fotos (não documentos)\n"
-        "• Uma foto por vez\n"
         "• Imagens claras têm melhores resultados\n\n"
         "❓ Dúvidas? Use /start para mais informações."
     )

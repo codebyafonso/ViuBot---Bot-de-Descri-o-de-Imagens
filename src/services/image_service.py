@@ -3,6 +3,7 @@ import time
 import requests
 from src.utils import logger
 from src.config import OPENROUTER_API_KEY, OPENROUTER_API_URL, OPENROUTER_MODEL
+from .chat_service import chat_about_image
 
 
 def describe_image(image_bytes: bytes, style: str = 'objective') -> str | None:
